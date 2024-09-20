@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    
+    <!-- Link para importar a fonte 'Roboto' do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilos CSS externo -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>  
+    <!-- Cabeçalho da página com o título principal -->
+    <header>
+        <h1>TASK MANAGER</h1> <!-- Título em destaque no topo da página -->
+    </header>
+    
+    <!-- Container principal que envolve o campo de entrada e a lista de tarefas -->
+    <div class="container">
+        
+        <!-- Seção de input onde o usuário digita a tarefa e adiciona à lista -->
+        <div id="div2" class="input-section">
+            <!-- Campo de texto onde o usuário digita a tarefa -->
+            <input type="text" id="entrada" placeholder="DIGITE AQUI">
+            
+            <!-- Botão que ao ser clicado chama a função getDados() para adicionar a tarefa -->
+            <button class="butao" onclick="getDados()">Clique aqui</button>
+        </div>
+        
+        <!-- Div onde as tarefas criadas pelo usuário serão exibidas -->
+        <div id="task-list" class="task-list">
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo que contém as funções e lógicas -->
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Regras globais para resetar margens e aplicar estilo padrão */
+* {
+    margin: 0; /* Remove todas as margens padrão */
+    padding: 0; /* Remove todos os preenchimentos padrão */
+    box-sizing: border-box; /* Inclui o padding e a borda nas dimensões totais dos elementos */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como 'Roboto' */
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    height: 100vh; /* Define a altura da página como 100% da viewport */
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 20px; /* Adiciona espaçamento interno de 20px */
+    position: relative; /* Define o posicionamento relativo para o uso de posicionamento absoluto em elementos filhos */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    position: absolute; /* Posiciona o cabeçalho de forma absoluta */
+    top: 20px; /* Define a distância do topo como 20px */
+    left: 20px; /* Define a distância da esquerda como 20px */
+}
+
+/* Estilos para o título principal */
+h1 {
+    font-size: 2.5rem; /* Tamanho da fonte em 2.5rem */
+    color: #007bff; /* Cor do texto azul */
+    font-weight: 700; /* Negrito no texto */
+    letter-spacing: 1.5px; /* Adiciona espaçamento entre as letras */
+}
+
+/* Container principal que envolve o conteúdo */
+.container {
+    width: 100%; /* Largura total do container */
+    max-width: 400px; /* Largura máxima de 400px */
+    padding: 20px; /* Adiciona 20px de preenchimento interno */
+    background-color: white; /* Cor de fundo branca */
+    border-radius: 8px; /* Borda arredondada com raio de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do container */
+    text-align: center; /* Centraliza o texto */
+    flex-wrap: wrap; /* Faz o conteúdo do container quebrar em várias linhas, se necessário */
+}
+
+/* Seção de input para novas tarefas */
+.input-section {
+    display: flex; /* Organiza os inputs e botão lado a lado */
+    margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+}
+
+/* Estilos para o campo de entrada */
+.input-section input {
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    padding: 10px; /* Preenchimento interno de 10px */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Borda arredondada */
+}
+
+/* Estilos para o botão de adicionar tarefa */
+.input-section button {
+    margin-left: 10px; /* Espaçamento à esquerda do botão */
+    padding: 10px 20px; /* Preenchimento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Efeito hover no botão de adicionar tarefa */
+.input-section button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo para um azul mais escuro ao passar o mouse */
+}
+
+/* Lista de tarefas */
+.task-list {
+    margin-top: 20px; /* Adiciona margem superior de 20px */
+}
+
+/* Estilos para cada tarefa individual */
+.task {
+    display: flex; /* Organiza os elementos da tarefa em uma linha */
+    justify-content: space-between; /* Espaça os itens para as extremidades */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    padding: 10px; /* Preenchimento interno de 10px */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px; /* Borda arredondada */
+    margin-bottom: 10px; /* Margem inferior de 10px entre as tarefas */
+    background-color: #f9f9f9; /* Cor de fundo da tarefa */
+    max-width: 100%; /* Largura máxima de 100% */
+}
+
+/* Estilos para o texto da tarefa */
+.task p {
+    margin: 0; /* Remove margem do parágrafo */
+    flex: 1; /* O texto ocupa todo o espaço disponível */
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
+    word-break: break-all; /* Quebra qualquer palavra longa que ultrapasse o limite da linha */
+}
+
+/* Botão para remover a tarefa */
+.task button {
+    margin-left: 10px; /* Espaçamento à esquerda do botão */
+    background-color: #dc3545; /* Cor de fundo vermelho */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Borda arredondada */
+    padding: 5px 10px; /* Preenchimento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Efeito hover no botão de remover tarefa */
+.task button:hover {
+    background-color: #c82333; /* Muda a cor de fundo para um vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilo aplicado às tarefas completadas */
+.completed {
+    text-decoration: line-through; /* Risca o texto das tarefas completadas */
+    color: #999; /* Muda a cor do texto para cinza claro */
+}
